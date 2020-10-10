@@ -5,6 +5,11 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
+        public void CreatingCommand(Command cmd)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IEnumerable<Command> GetAllCommands()
         {
             // throw new NotImplementedException();
@@ -27,6 +32,11 @@ namespace Commander.Data
                 Line = "BoilWater",
                 Platform = "ketti & "
             };
+        }
+
+        public bool SaveChanges()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
