@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using e_property.Models;
+using Commander.Models;
 
-namespace e_property.Data
+namespace Commander.Data
 {
     public interface ICommanderRepo
     {

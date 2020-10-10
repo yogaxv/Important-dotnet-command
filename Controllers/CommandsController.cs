@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using e_property.Data;
-using e_property.Models;
+using Commander.Data;
+using Commander.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace e_property.Controllers
+namespace Commander.Controllers
 {
     [ApiController]
     //[Route("api/[controller]")]           // api/commands

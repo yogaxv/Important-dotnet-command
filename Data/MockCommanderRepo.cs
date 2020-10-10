@@ -1,7 +1,7 @@
-﻿using e_property.Models;
+﻿using Commander.Models;
 using System.Collections.Generic;
 
-namespace e_property.Data
+namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
