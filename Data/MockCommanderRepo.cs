@@ -5,7 +5,7 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GetCommands()
+        public IEnumerable<Command> GetAllCommands()
         {
             // throw new NotImplementedException();
             var commands = new List<Command> {

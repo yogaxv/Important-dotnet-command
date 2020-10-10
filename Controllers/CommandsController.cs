@@ -10,13 +10,22 @@ namespace Commander.Controllers
     [Route("api/commands")]
     public class CommandsController : ControllerBase
     {
-        // Prepare Data
-        private readonly MockCommanderRepo _repository = new MockCommanderRepo();
+        // Prepare repository using mock Data
+        // private readonly MockCommanderRepo _repository = new MockCommanderRepo();
+
+        // Prepare repository using Dependency injection
+        // Create Dependency injection
+        private readonly ICommanderRepo _repository;
+
+        public CommandsController(ICommanderRepo repository)
+        {
+            _repository = repository;
+        }        
         
         [HttpGet]
         public ActionResult <IEnumerable<Command>> GetAllCommand()
         {
-            var commandItems = _repository.GetCommands();
+            var commandItems = _repository.GetAllCommands();
 
             return Ok(commandItems);
         }
