@@ -1,0 +1,51 @@
+##Important Command .NET CORE USING VS
+
+Create Project :
+dotnet new
+dotnet new webapi -n <Name of Project>
+dotnet new webapi -n Commander
+
+Open Project in VS :
+coder -r Commander
+
+instal ef (EntityFramework)
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Design 
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer 
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+dotnet add package Microsoft.AspNetCore.JsonPatch
+
+For detail check : 
+https://www.nuget.org/packages?q=entityframework
+
+Check If EF Works 
+dotnet ef
+
+it will show unicorn
+
+if above command not work, try using : 
+dotnet tool install --global dotnet-ef
+
+make migration
+dotnet ef migrations add <Name Of Migrations>
+dotnet ef migrations add InitialMigration
+
+remove migration
+dotnet ef migrations remove
+
+do migrations
+dotnet ef database update
+
+Build Project
+dotnet build
+
+
+Run Project
+dotnet run
+dotnet watch run
+
+##Kinds Of Problem I face when learn this Project
+
+Problem : Visual Studio Code Not show Errors:
+Fixing : try to reinstal C# Extension
