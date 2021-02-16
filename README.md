@@ -1,11 +1,15 @@
 # Important-dotnet-command
 
 
-Create Project :
+Create SLN & Project :
 ```
+dotnet new sln
+
 dotnet new
 dotnet new webapi -n <Name of Project>
 dotnet new webapi -n Commander
+
+dotnet sln bnefit-v1.sln add Contracts\Contracts.csproj
 ```
 
 Open Project in VS :
